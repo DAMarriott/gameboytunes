@@ -21,16 +21,29 @@ img {
 
 .links {
   margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  width: 20%;
 }
 
 .links * {
-  padding: 40px;
-  width: 50px;
+  width: 20%;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.video-container {
+  position: fixed;
+  width: 888px;
+  top: 200px;
+  left: 50%;
+  margin-left: -444px;
 }
 
 @media screen and (max-width: 415px) {
@@ -39,11 +52,30 @@ a {
   }
 
   .links {
-    margin-top: -25px;
-    margin-left: -20px;
+    height: 100px;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .links a {
+    width: 100%;
+  }
+
+  .links a img {
+    width: 75%;
   }
 
   .img-container {
     margin-top: 100px;
+  }
+
+  .video-container {
+    position: fixed;
+    width: 600px;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
   }
 }
